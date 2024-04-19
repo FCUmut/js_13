@@ -10,6 +10,8 @@ Player.prototype.gainXp = function (xp) {
     this.lvl++;
     this.points = 0;
   }
+
+  console.log(player1.describe());
 };
 
 Player.prototype.describe = function () {
@@ -20,5 +22,4 @@ let player1 = new Player("Bob");
 player1.gainXp(5);
 player1.gainXp(5);
 player1.gainXp(5);
-console.log(player1.describe());
 console.log(player1.name);
